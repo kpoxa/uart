@@ -7,7 +7,7 @@
 
 -module(uart_win32_devices).
 
--compile(export_all).
+-export([scan_enum_tree/0, scan_enum_tree/1]).
 
 %% HKLM\ENUM
 %%   |-BIOS

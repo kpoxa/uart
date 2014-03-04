@@ -10,11 +10,13 @@
 
 -behaviour(gen_server).
 
--compile(export_all).
 
 %% API
 -export([start_link/0]).
 -export([start/0, stop/0]).
+-export([alloc/1, release/1, get_list/0, get_info/2]).
+-export([get_fullname/1, subscribe/0, unsubscribe/1]).
+-export([i/0, unwatch/1, removed_by_id/2]).
 
 -import(lists, [map/2]).
 
